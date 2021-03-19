@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/insurance/static/css/main.35afe7cb.chunk.css",
-    "main.js": "/insurance/static/js/main.b9e332d3.chunk.js",
-    "main.js.map": "/insurance/static/js/main.b9e332d3.chunk.js.map",
-    "runtime-main.js": "/insurance/static/js/runtime-main.d792ab7e.js",
-    "runtime-main.js.map": "/insurance/static/js/runtime-main.d792ab7e.js.map",
-    "static/js/2.42138a0b.chunk.js": "/insurance/static/js/2.42138a0b.chunk.js",
-    "static/js/2.42138a0b.chunk.js.map": "/insurance/static/js/2.42138a0b.chunk.js.map",
-    "index.html": "/insurance/index.html",
-    "static/css/main.35afe7cb.chunk.css.map": "/insurance/static/css/main.35afe7cb.chunk.css.map",
-    "static/js/2.42138a0b.chunk.js.LICENSE.txt": "/insurance/static/js/2.42138a0b.chunk.js.LICENSE.txt"
+    "main.css": "/axavila/insurance/static/css/main.35afe7cb.chunk.css",
+    "main.js": "/axavila/insurance/static/js/main.b9e332d3.chunk.js",
+    "main.js.map": "/axavila/insurance/static/js/main.b9e332d3.chunk.js.map",
+    "runtime-main.js": "/axavila/insurance/static/js/runtime-main.3decd425.js",
+    "runtime-main.js.map": "/axavila/insurance/static/js/runtime-main.3decd425.js.map",
+    "static/js/2.da5dd879.chunk.js": "/axavila/insurance/static/js/2.da5dd879.chunk.js",
+    "static/js/2.da5dd879.chunk.js.map": "/axavila/insurance/static/js/2.da5dd879.chunk.js.map",
+    "index.html": "/axavila/insurance/index.html",
+    "static/css/main.35afe7cb.chunk.css.map": "/axavila/insurance/static/css/main.35afe7cb.chunk.css.map",
+    "static/js/2.da5dd879.chunk.js.LICENSE.txt": "/axavila/insurance/static/js/2.da5dd879.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.d792ab7e.js",
-    "static/js/2.42138a0b.chunk.js",
+    "static/js/runtime-main.3decd425.js",
+    "static/js/2.da5dd879.chunk.js",
     "static/css/main.35afe7cb.chunk.css",
     "static/js/main.b9e332d3.chunk.js"
   ]
