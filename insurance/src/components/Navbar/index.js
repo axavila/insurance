@@ -12,11 +12,17 @@ const Navbar = ({toggle}) => {
                       <FaBars />
                   </MobileIcon>
                   <NavMenu>
-                      <NavItem>
-                          <NavLinks to='about'>About</NavLinks>
+                  <NavItem>
+                          <NavLinks to='home'>Home</NavLinks>
                       </NavItem>
                       <NavItem>
-                          <NavLinks to='insurances'>Insurance</NavLinks>
+                          <NavLinks to='about'>About Us</NavLinks>
+                      </NavItem>
+                      <NavItem>
+                          <NavLinks to='insurances'>Business Insurance</NavLinks>
+                      </NavItem>
+                      <NavItem>
+                          <NavLinks to='personal'>Personal Insurance</NavLinks>
                       </NavItem>
                       
                   </NavMenu>
