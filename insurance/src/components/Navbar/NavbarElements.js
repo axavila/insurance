@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import {Link as LinkR} from 'react-router-dom'
 import {Link as LinkS} from 'react-scroll'
+import ImgLogo from '../../images/insurancelogo.jpeg';
 
 export const Nav = styled.nav`
     background: transparent;
@@ -38,6 +39,7 @@ export const NavbarContainer = styled.div `
 `
 
 export const NavLogo = styled(LinkR) `
+    
     color: #fff;
     justify-self: flex-start;
     cursor: pointer;
@@ -128,3 +130,15 @@ export const NavBtnLink = styled(LinkR) `
         color: #010606;
     }
 `;
+
+export const Logo = styled.img `
+width: 63px;
+height: 60px;
+
+`;
+
+export const Logo2 = styled.img `
+width: 146px;
+height: 60px;
+margin: 8px;
+`
