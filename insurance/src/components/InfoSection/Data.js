@@ -9,7 +9,7 @@ export const homeObjOne = {
     description: 'We have diferent types of Insurance that adapts to each of your requirements ',
     buttonLabel: 'Get started',
     imgStart: false,
-    img: require ('../..//images/data1.svg'),
+    img: require ('../../images/data1.svg'),
     alt: 'car',
     dark: true,
     primary: true,
