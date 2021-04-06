@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/insurance/static/css/main.14079f83.chunk.css",
-    "main.js": "/insurance/static/js/main.b4b77f7a.chunk.js",
-    "main.js.map": "/insurance/static/js/main.b4b77f7a.chunk.js.map",
+    "main.js": "/insurance/static/js/main.f92d76a9.chunk.js",
+    "main.js.map": "/insurance/static/js/main.f92d76a9.chunk.js.map",
     "runtime-main.js": "/insurance/static/js/runtime-main.d792ab7e.js",
     "runtime-main.js.map": "/insurance/static/js/runtime-main.d792ab7e.js.map",
-    "static/js/2.1da3dc00.chunk.js": "/insurance/static/js/2.1da3dc00.chunk.js",
-    "static/js/2.1da3dc00.chunk.js.map": "/insurance/static/js/2.1da3dc00.chunk.js.map",
+    "static/js/2.ac17dc0e.chunk.js": "/insurance/static/js/2.ac17dc0e.chunk.js",
+    "static/js/2.ac17dc0e.chunk.js.map": "/insurance/static/js/2.ac17dc0e.chunk.js.map",
     "index.html": "/insurance/index.html",
     "static/css/main.14079f83.chunk.css.map": "/insurance/static/css/main.14079f83.chunk.css.map",
-    "static/js/2.1da3dc00.chunk.js.LICENSE.txt": "/insurance/static/js/2.1da3dc00.chunk.js.LICENSE.txt",
-    "static/media/data1.svg": "/insurance/static/media/data1.fb937781.svg",
+    "static/js/2.ac17dc0e.chunk.js.LICENSE.txt": "/insurance/static/js/2.ac17dc0e.chunk.js.LICENSE.txt",
+    "static/media/data1.svg": "/insurance/static/media/data1.6995ebdc.svg",
     "static/media/insurance.20836db8.jpg": "/insurance/static/media/insurance.20836db8.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.d792ab7e.js",
-    "static/js/2.1da3dc00.chunk.js",
+    "static/js/2.ac17dc0e.chunk.js",
     "static/css/main.14079f83.chunk.css",
-    "static/js/main.b4b77f7a.chunk.js"
+    "static/js/main.f92d76a9.chunk.js"
   ]
 }
