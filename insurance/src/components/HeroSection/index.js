@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { Button } from '../ButtonElement';
+import { Button } from '../ButtonElements';
 
 import {HeroContainer, HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight} from './HeroElements';
 
