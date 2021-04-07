@@ -15,7 +15,7 @@ const HeroSection = () => {
     return (
         <HeroContainer>
            <HeroContent>
-               <HeroH1>Life is embracing those little moments.</HeroH1>
+               <HeroH1>We are your Vlife Insurance Agency</HeroH1>
                <HeroP>
                    Insurance is protecting them.
                </HeroP>
