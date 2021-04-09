@@ -46,7 +46,7 @@ export const homeObjThree = {
     description: 'Has a cash value that accumulates over the life of the policy ',
     buttonLabel: 'Start Now',
     imgStart: false,
-    img: require ('../../images/data3.svg').default,
+    img: require ('../../images/data4.svg').default,
     alt: 'data',
     dark: true,
     primary: true,
