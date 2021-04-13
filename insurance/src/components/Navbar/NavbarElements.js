@@ -4,9 +4,7 @@ import {Link as LinkS} from 'react-scroll'
 
 
 export const Nav = styled.nav`
-    background: transparent;
-    
-    
+    background: ${({scrollNav}) => (scrollNav ? '#262626' : 'transparent')};
     height: 80px;
     margin-top: -80px;
     display: flex;
