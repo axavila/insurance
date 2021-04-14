@@ -2,8 +2,14 @@ import React from 'react'
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import {FooterContainer, FooterWrap, FooterLinksContainer, FooterLinksWrapper, FooterLinkItems, FooterLinkTitle, FooterLink, SocialMedia, SocialMediaWrap, SocialLogo, WebsiteRights, SocialIcons, SocialIconLink, Logo } from './FooterElements';
 import ImgLogo from '../../images/logo1.jpeg';
+import {animateScroll as scroll} from 'react-scroll';
 
 const Footer = () => {
+
+    const toggleHome = () => {
+        scroll.scrollToTop();
+    };
+
     return (
         <FooterContainer>
             <FooterWrap>
@@ -40,9 +46,9 @@ const Footer = () => {
                 <SocialMedia>
                     <SocialMediaWrap>
                         <SocialLogo to='/'>
-                        <Logo src={ImgLogo}/>
+                        {/* <Logo src={ImgLogo}/> */}
                         </SocialLogo>
-                        <WebsiteRights>AxDev © {new Date().getFullYear()} All rights reserved</WebsiteRights>
+                        <WebsiteRights to='/' onClick={toggleHome}>Vlife Insurance © {new Date().getFullYear()} All rights reserved</WebsiteRights>
                         <SocialIcons>
                             <SocialIconLink href='/' target="_blank" aria-label="Instagram"><FaInstagram/></SocialIconLink>
                             <SocialIconLink href='/' target="_blank" aria-label="Facebook"><FaFacebook/></SocialIconLink>

@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
-import {FaBars} from 'react-icons/fa'
+import {FaBars} from 'react-icons/fa';
+import {animateScroll as scroll} from 'react-scroll';
 import {Nav, NavbarContainer, Logo, Logo2, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink} from './NavbarElements'
 import ImgLogo from '../../images/logop5.png';
 import ImgLogo2 from '../../images/logo22.png';
@@ -9,7 +10,7 @@ const Navbar = ({toggle}) => {
     const [scrollNav, setScrollNav] = useState(false)
 
     const changeNav = () => {
-        if(window.scrollY >= 880) {
+        if(window.scrollY >= 700) {
             setScrollNav(true)
         } else {
             setScrollNav(false)
@@ -18,14 +19,18 @@ const Navbar = ({toggle}) => {
 
     useEffect (() => {
         window.addEventListener('scroll', changeNav)
-    }, [])
+    }, []);
+
+    const toggleHome = () => {
+        scroll.scrollToTop();
+    };
 
     return (
         <>
         <IconContext.Provider value={{color: '#fff'}}>
           <Nav scrollNav={scrollNav}>
               <NavbarContainer>
-                  <NavLogo to='/'>
+                  <NavLogo to='/' onClick={toggleHome}>
                     <Logo src={ImgLogo}/>
                      <Logo2 src={ImgLogo2}/>
                       </NavLogo>
@@ -34,16 +39,16 @@ const Navbar = ({toggle}) => {
                   </MobileIcon>
                   <NavMenu>
                   <NavItem>
-                          <NavLinks to='home'>Home</NavLinks>
+                          <NavLinks to='/' onClick={toggleHome}>Home</NavLinks>
                       </NavItem>
                       <NavItem>
-                          <NavLinks to='about'>About Us</NavLinks>
+                          <NavLinks to='about' smooth={true} duration={500} spy={true} exact='true' offset={-80}>About Us</NavLinks>
                       </NavItem>
                       <NavItem>
-                          <NavLinks to='insurances'>Business Insurance</NavLinks>
+                          <NavLinks to='insurances' smooth={true} duration={500} spy={true} exact='true' offset={-80}>Business Insurance</NavLinks>
                       </NavItem>
                       <NavItem>
-                          <NavLinks to='personal'>Personal Insurance</NavLinks>
+                          <NavLinks to='personal' smooth={true} duration={500} spy={true} exact='true' offset={-80}>Personal Insurance</NavLinks>
                       </NavItem>
                       
                   </NavMenu>
