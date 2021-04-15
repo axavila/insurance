@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import {FooterContainer, FooterWrap, FooterLinksContainer, FooterLinksWrapper, FooterLinkItems, FooterLinkTitle, FooterLink, SocialMedia, SocialMediaWrap, SocialLogo, WebsiteRights, SocialIcons, SocialIconLink, Logo } from './FooterElements';
-import ImgLogo from '../../images/logo1.jpeg';
+// import ImgLogo from '../../images/logo1.jpeg';
 import {animateScroll as scroll} from 'react-scroll';
 
 const Footer = () => {
