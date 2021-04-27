@@ -10,7 +10,7 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route path='/insurance' component={Home} exact />
+        <Route path='/' component={Home} exact />
         <Route path="/contactus" component={ContactusPage} exact />
       </Switch>
       

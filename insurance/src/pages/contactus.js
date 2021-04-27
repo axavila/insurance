@@ -8,7 +8,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Contact from '../components/Contact';
 
-const Home = () => {
+const Contactus = () => {
     const [isOpen, setIsOpen] = useState(false)
 
     const toggle = () => {
@@ -32,4 +32,4 @@ const Home = () => {
     );
 };
 
-export default Home;
+export default Contactus;

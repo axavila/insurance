@@ -37,8 +37,8 @@ const Footer = () => {
                         </FooterLinkItems>
                         <FooterLinkItems>
                         <FooterLinkTitle>Social Media</FooterLinkTitle>
-                                <FooterLink to="/contactus">Instagram</FooterLink>
-                                <FooterLink to="/contactus">Facebook</FooterLink>
+                                <FooterLink href='//www.instagram.com/vlifeinsurances/' target="_blank" aria-label="Instagram">Instagram</FooterLink>
+                                <FooterLink href="//www.facebook.com/VLifeInsurances/">Facebook</FooterLink>
                                 <FooterLink to="/contactus">Twitter</FooterLink>
                         </FooterLinkItems>
                     </FooterLinksWrapper>
@@ -50,8 +50,8 @@ const Footer = () => {
                         </SocialLogo>
                         <WebsiteRights to='/' onClick={toggleHome}>Vlife Insurance © {new Date().getFullYear()} All rights reserved</WebsiteRights>
                         <SocialIcons>
-                            <SocialIconLink href='/' target="_blank" aria-label="Instagram"><FaInstagram/></SocialIconLink>
-                            <SocialIconLink href='/' target="_blank" aria-label="Facebook"><FaFacebook/></SocialIconLink>
+                            <SocialIconLink href='//www.instagram.com/vlifeinsurances/' target="_blank" aria-label="Instagram"><FaInstagram/></SocialIconLink>
+                            <SocialIconLink href='//www.facebook.com/VLifeInsurances/' target="_blank" aria-label="Facebook"><FaFacebook/></SocialIconLink>
                             <SocialIconLink href='/' target="_blank" aria-label="Twitter"><FaTwitter/></SocialIconLink>
                             <SocialIconLink href='/' target="_blank" aria-label="LinkedIn"><FaLinkedin/></SocialIconLink>
                         </SocialIcons>
