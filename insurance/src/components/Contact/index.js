@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { Container, Form, FormButton, FormContent, FormH1, FormInput, FormLabel, FormWrap, Icon, Text } from './ContactElements'
+import { Container, Form, FormButton, FormContent, FormH1, FormInput, FormLabel, FormWrap, Icon, Text, Column1, Column2, InfoWrapper, InfoRow, ServicesH2, ServicesP, ServicesH1, TextWrapper} from './ContactElements'
 
 const Contact = () => {
     const [data, setData] = useState ({
@@ -40,10 +40,18 @@ const Contact = () => {
 
     return (
         <>
+            
             <Container>
-                <FormWrap>
+                
+                {/* <FormWrap> */}
+
+                <InfoWrapper>
+
+                    <InfoRow>
+                        <Column1>
                     {/* <Icon to="/insurance">Vlife</Icon> */}
                     <FormContent>
+                        
                         <Form onSubmit= {handleSubmit}>
                             <FormH1>Contact us</FormH1>
                             <FormLabel htmlFor='for'>Name</FormLabel>
@@ -68,8 +76,28 @@ const Contact = () => {
                             {/* <Text>Forgot Password</Text> */}
 
                         </Form>
+                        
+                        
                     </FormContent>
-                </FormWrap>
+                    </Column1>
+                    <Column2>
+                    <TextWrapper>
+                    <ServicesH1>Contact information</ServicesH1>
+                    <ServicesH2>Address</ServicesH2>
+                    <ServicesP>3404 W 109TH PLACE Hialeah, Florida, Estados Unidos</ServicesP>
+                    <br></br>
+                    <ServicesH2>Email</ServicesH2>
+                    <ServicesP>mkt@vlifeinsurances.com</ServicesP>
+                    <br></br>
+                    <ServicesH2>Call us</ServicesH2>
+                    <ServicesP>+1 800-842-8260</ServicesP>
+                    </TextWrapper>
+                    </Column2>
+                    
+                {/* </FormWrap> */}
+                </InfoRow>
+
+                </InfoWrapper>
             </Container>
             
         </>

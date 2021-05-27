@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Home from './pages';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import ContactusPage from './pages/contactus';
+import Contactus from './pages/contactus';
 
 
 
@@ -11,7 +11,7 @@ function App() {
     <Router>
       <Switch>
         <Route path='/' component={Home} exact />
-        <Route path="/contactus" component={ContactusPage} exact />
+        <Route path='/contactus' component={Contactus} exact />
       </Switch>
       
      

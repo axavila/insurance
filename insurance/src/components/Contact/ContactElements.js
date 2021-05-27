@@ -16,16 +16,24 @@ export const Container = styled.div`
     
 `;
 
-export const FormWrap = styled.div`
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+// export const FormWrap = styled.div`
+//     height: 100%;
+//     /* display: flex; */
+//     /* flex-direction: column; */
+//     /* justify-content: center; */
+    
+//     max-width: 1000px;
+//     margin: 0 auto;
+//     display: grid;
+//     grid-template-columns: 3fr 1fr 1fr;
+//     align-items: center;
+//     grid-gap: 16px;
+//     padding: 0 50px;
 
-    @media screen and (max-width: 400px) {
-        height: 80%;
-    }
-`;
+//     @media screen and (max-width: 400px) {
+//         height: 80%;
+//     }
+// `;
 
 export const Icon = styled(Link)`
     margin-left: 32px;
@@ -107,3 +115,69 @@ export const Text = styled.span`
     font-size: 14px;  
 `;
 
+
+export const InfoWrapper = styled.div `
+    display: grid;
+    z-index: 1;
+    height: 1060px;
+    width: 100%;
+    max-width: 1100px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 24px;
+    justify-content: center;
+`
+
+export const InfoRow =styled.div `
+    display: grid;
+    grid-auto-columns: minmax(auto, 1fr);
+    align-items: center;
+    grid-template-areas: ${({imgStart}) => imgStart ? `'col2 col1'` : `'col1 col2'`};
+    
+    @media screen and (max-width: 768px) {
+        grid-template-areas: ${({imgStart}) => imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};
+
+    }
+`
+
+export const Column1 =styled.div `
+    margin-top: 80px;
+    margin-bottom: 0px;
+    padding: 0 15px;
+    grid-area: col1;
+`
+
+export const Column2 = styled.div `
+    margin-top: 80px;
+    margin-left: 60px ;
+    margin-bottom: 205px;
+    padding: 0 15px;
+    grid-area: col2;
+`
+
+export const TextWrapper = styled.div `
+    max-width: 540px;
+    padding-top: 0;
+    padding-bottom: 60px;
+
+`
+
+export const ServicesH2 = styled.h2`
+    font-size: 2rem;
+    margin-bottom: 10px;
+`;
+
+export const ServicesP = styled.p`
+    font-size: 1rem;
+    /* text-align: center; */
+`;
+
+export const ServicesH1 = styled.h1`
+    font-size: 2.5rem;
+    /* color: #fff; */
+    margin-bottom: 64px;
+
+    @media screen and (max-width: 480px) {
+        font-size: 2rem;
+    }
+`;
