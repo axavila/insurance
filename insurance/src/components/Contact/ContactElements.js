@@ -165,16 +165,18 @@ export const TextWrapper = styled.div `
 export const ServicesH2 = styled.h2`
     font-size: 2rem;
     margin-bottom: 10px;
+    color: #fff;
 `;
 
 export const ServicesP = styled.p`
     font-size: 1rem;
+    color: #fff;
     /* text-align: center; */
 `;
 
 export const ServicesH1 = styled.h1`
     font-size: 2.5rem;
-    /* color: #fff; */
+    color: #fff;
     margin-bottom: 64px;
 
     @media screen and (max-width: 480px) {

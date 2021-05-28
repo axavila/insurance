@@ -20,7 +20,7 @@ const HeroSection = () => {
                    Insurance is protecting them.
                </HeroP>
                <HeroBtnWrapper>
-                   <Button to='contactus' onMouseEnter={onHover} onMouseLeave={onHover} primary='true' dark='true'>
+                   <Button to='./contactus' onMouseEnter={onHover} onMouseLeave={onHover} primary='true' dark='true'>
                        Get started {hover ? <ArrowForward /> : <ArrowRight />}
                    </Button>
                </HeroBtnWrapper>
