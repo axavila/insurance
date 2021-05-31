@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import ImgBg from '../../images/back1.jpg';
+import styled, {css} from 'styled-components/macro';
+import ImgBg from '../../images/back2.jpg';
 import {MdKeyboardArrowRight, MdArrowForward} from 'react-icons/md';
 
 

@@ -21,7 +21,7 @@ export const ServicesWrapper = styled.div `
     max-width: 1000px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
     grid-gap: 16px;
     padding: 0 50px;
@@ -42,6 +42,7 @@ export const ServicesCard = styled.div `
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    border-style: dashed;
     border-radius: 10px;
     max-height: 340px;
     padding: 30px;

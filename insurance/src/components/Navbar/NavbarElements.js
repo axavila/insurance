@@ -10,7 +10,7 @@ export const Nav = styled.nav`
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1rem;
+    font-size: 1.08rem;
     position: sticky;
     top: 0;
     z-index: 10;
@@ -24,12 +24,12 @@ export const Nav = styled.nav`
 
 export const NavbarContainer = styled.div `
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     height: 80px;
     z-index: 1;
     width: 100%;
     padding: 0 -24px;
-    max-width: 1700px;
+    max-width: 1600px;
     /* border-bottom: 1px solid #e4e5f1 ; */
 
 
@@ -44,7 +44,8 @@ export const NavLogo = styled(LinkR) `
     font-size: 1.5rem;
     display: flex;
     align-items: center;
-    margin-left: 2px;
+    margin-left: 30px;
+    margin-top: 10px;
     font-weight: bold;
     text-decoration: none;
 
@@ -112,10 +113,10 @@ export const NavBtn = styled.nav `
 
 export const NavBtnLink = styled(LinkR) `
     border-radius: 50px;
-    background: #01bf71;
+    background: #FF4500;
     white-space: nowrap;
     padding: 10px 22px;
-    color: #010606;
+    color: #E9EAEC;
     font-size: 16px;
     outline: none;
     border: none;
