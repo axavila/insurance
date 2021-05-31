@@ -26,8 +26,9 @@ const Home = () => {
             <Hero slides={SliderData} />
             {/* <Hero slides={SliderData}/> */}
             <InfoSection {...homeObjTwo}/>
-            <InfoSection {...homeObjOne}/>
             <Services/>
+            <InfoSection {...homeObjOne}/>
+            
             <InfoSection {...homeObjThree}/>
             <Footer/>
             

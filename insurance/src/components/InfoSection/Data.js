@@ -20,19 +20,19 @@ export const homeObjOne = {
 
 export const homeObjTwo = {
     id: 'about',
-    lightBg: true,
+    lightBg: false,
     lightText: true,
     lightTextDesc: true,
     topLine: 'Vlife Insurance',
-    headLine: 'Protect those you love',
-    description: 'You and your spouse should have life insurance coverage to help protect each other in the event that either of you dies prematurely. ',
+    headLine: 'Asses Your Current Financial Situation',
+    description: 'You need a true picture of your financial health before you can figure out what type of life insurance you need and how much',
     buttonLabel: 'Learn More',
     imgStart: true,
-    img: require ('../../images/data2.svg').default,
+    img: require ('../../images/data21.jpg').default,
     alt: 'protect',
     dark: true,
     primary: true,
-    darkText: true
+    darkText: false
 
 };
 
