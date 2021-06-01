@@ -6,15 +6,17 @@ export const homeObjOne = {
     lightText: true,
     lightTextDesc: true,
     topLine: 'Vlife Insurance',
-    headLine: 'Diferent types of Insurance',
-    description: 'We have diferent types of Insurance that adapts to each of your requirements ',
+    headLine: 'Investment Options',
+    description: <div>- Fixed Vlife Insurance: <br /><br />Fixed Vlife Insurance provides flexible premium payments and reliable cash value growth tied to a fixed interest rate, offering stable growth over time.<br /><br /> - Variable Vlife Insurance: <br /><br /> Variable Vlife Insurance offers the potential to build cash value based on the performance of the investment options you choose.<br /><br /> - Index Vlife Insurance: <br /><br /> Index Vlife Insurance offers cash value growth based on movement of an underlying index account, but does not participate directly in the market. </div>,
     buttonLabel: 'Get started',
     imgStart: false,
-    img: require ('../../images/data1.svg').default,
+    img: require ('../../images/info2.png').default,
     alt: 'type',
     dark: true,
     primary: true,
-    darkText: false
+    darkText: false,
+    
+    
 
 };
 

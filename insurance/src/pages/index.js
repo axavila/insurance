@@ -8,6 +8,9 @@ import Services from '../components/Services';
 import Footer from '../components/Footer';
 
 import {SliderData} from '../data/SliderData';
+import Contact from '../components/Contact';
+import contactp from '../components/Contact/contact';
+import ContactP from '../components/Contact/contact';
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -29,7 +32,8 @@ const Home = () => {
             <Services/>
             <InfoSection {...homeObjOne}/>
             
-            <InfoSection {...homeObjThree}/>
+            {/* <InfoSection {...homeObjThree}/> */}
+            <ContactP />
             <Footer/>
             
         </>

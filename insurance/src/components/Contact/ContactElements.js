@@ -1,39 +1,74 @@
 import styled from 'styled-components';
 import {Link} from 'react-router-dom';
 import ImgBg from '../../images/back1.jpg';
+import ImgBg1 from '../../images/contact1.jpg';
 
-export const Container = styled.div`
-    background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.1)), url(${ImgBg}) no-repeat fixed;
+export const Container1 = styled.div`
+    background: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.2)), url(${ImgBg1}) no-repeat fixed;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+    z-index: 1;
+    background-position: relative;
+    background-size: cover;
+    /* background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.1)), url(${ImgBg}) no-repeat fixed;
     min-height: 692px;
-    position: fixed;
-    bottom: 0;
+    /* position: fixed; */
+    /* bottom: 0;
     left: 0;
     right: 0;
     top: 0;
-    z-index: 0;
-    overflow: hidden;
+    z-index: 1;
+    overflow: hidden; */ */
     /* background: linear-gradient(108deg, rgba(24, 89, 49, 1) 80%, rgba(24, 89, 49, 1) 100%); */
     
 `;
 
-// export const FormWrap = styled.div`
-//     height: 100%;
-//     /* display: flex; */
-//     /* flex-direction: column; */
-//     /* justify-content: center; */
+export const Container = styled.div`
+    background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.1)), url(${ImgBg}) no-repeat fixed;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+    z-index: 1;
+    background-position: relative;
+    background-size: cover;
+    /* background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.1)), url(${ImgBg}) no-repeat fixed;
+    min-height: 692px;
+    /* position: fixed; */
+    /* bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    overflow: hidden; */ */
+    /* background: linear-gradient(108deg, rgba(24, 89, 49, 1) 80%, rgba(24, 89, 49, 1) 100%); */
     
-//     max-width: 1000px;
-//     margin: 0 auto;
-//     display: grid;
-//     grid-template-columns: 3fr 1fr 1fr;
-//     align-items: center;
-//     grid-gap: 16px;
-//     padding: 0 50px;
+`;
 
-//     @media screen and (max-width: 400px) {
-//         height: 80%;
-//     }
-// `;
+export const FormWrap = styled.div`
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    align-items: center;
+    grid-gap: 16px;
+    padding: 0 50px;
+
+    @media screen and (max-width: 400px) {
+        height: 80%;
+    }
+`;
 
 export const Icon = styled(Link)`
     margin-left: 32px;
@@ -77,10 +112,56 @@ export const Form = styled.form`
     }
 `;
 
+export const Form1 = styled.form`
+    /* background: #010101; */
+    max-width: 500px;
+    height: auto;
+    width: 1000%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    /* padding: 80px 32px; */
+    /* border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.9); */
+
+    @media screen and (max-width: 400px) {
+        padding: 32px 32px;
+    }
+`;
+
+export const Form2 = styled.form`
+    /* background: #010101; */
+    max-width: 500px;
+    height: auto;
+    width: 1000%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    /* padding: 80px 32px; */
+    /* border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.9); */
+
+    @media screen and (max-width: 400px) {
+        padding: 32px 32px;
+    }
+`;
 export const FormH1 = styled.h1`
     margin-bottom: 40px;
     color: #fff;
     font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+`;
+
+export const FormH11 = styled.h1`
+    margin-bottom: 40px;
+    color: #fff;
+    font-size: 40px;
     font-weight: 400;
     text-align: center;
 `;
@@ -98,8 +179,22 @@ export const FormInput = styled.input`
     border-radius: 4px;
 `;
 
+export const FormInput1 = styled.input`
+    
+  
+  height: 100px;
+  padding: 16px 16px;
+  margin-bottom: 32px;
+  /* box-shadow: none; */
+  /* display: block; */
+  border: none;
+  border-radius: 4px;
+  
+  
+`;
+
 export const FormButton = styled.button`
-    background: #01bf71;
+    background: #FF4500;
     padding: 16px 0;
     border: none;
     border-radius: 4px;
