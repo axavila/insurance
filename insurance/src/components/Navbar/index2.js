@@ -1,12 +1,12 @@
 import React, {useEffect, useState} from 'react';
 import {FaBars} from 'react-icons/fa';
 import {animateScroll as scroll} from 'react-scroll';
-import {Nav, NavbarContainer, Logo, Logo2, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink} from './NavbarElements'
+import {Nav, NavbarContainer, Logo, Logo2, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink, Nav2} from './NavbarElements'
 import ImgLogo from '../../images/logop5.png';
 import ImgLogo2 from '../../images/logo22.png';
 import { IconContext } from 'react-icons/lib';
 
-const Navbar = ({toggle}) => {
+const Navbar2 = ({toggle}) => {
     const [scrollNav, setScrollNav] = useState(false)
 
     const changeNav = () => {
@@ -28,7 +28,7 @@ const Navbar = ({toggle}) => {
     return (
         <>
         <IconContext.Provider value={{color: '#fff'}}>
-          <Nav scrollNav={scrollNav}>
+          <Nav2 scrollNav={scrollNav}>
           <NavLogo to='/' onClick={toggleHome}>
                     <Logo src={ImgLogo}/>
                      <Logo2 src={ImgLogo2}/>
@@ -60,10 +60,10 @@ const Navbar = ({toggle}) => {
                       <NavBtnLink to= './contactus'>Contact us</NavBtnLink>
                   </NavBtn>
               </NavbarContainer> 
-          </Nav>
+          </Nav2>
           </IconContext.Provider>
         </>
     );
 };
 
-export default Navbar;
+export default Navbar2;

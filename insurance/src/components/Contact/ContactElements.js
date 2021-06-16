@@ -38,15 +38,15 @@ export const Container = styled.div`
     z-index: 1;
     background-position: relative;
     background-size: cover;
-    /* background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.1)), url(${ImgBg}) no-repeat fixed;
-    min-height: 692px;
+    background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.1)), url(${ImgBg}) no-repeat fixed;
+    /* min-height: 692px; */
     /* position: fixed; */
     /* bottom: 0;
     left: 0;
     right: 0;
     top: 0;
     z-index: 1;
-    overflow: hidden; */ */
+    overflow: hidden; */
     /* background: linear-gradient(108deg, rgba(24, 89, 49, 1) 80%, rgba(24, 89, 49, 1) 100%); */
     
 `;

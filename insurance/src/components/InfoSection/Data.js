@@ -73,3 +73,21 @@ export const homeObjFour = {
     darkText: false
 
 };
+
+export const homeObjFive = {
+    id: 'personal',
+    lightBg: false,
+    lightText: true,
+    lightTextDesc: true,
+    opLine: 'Vlife Insurance',
+    eadLine: 'Life Insurance',
+    escription: <div>What do you love about your life? You might be grateful for a partner who understands you better than anyone else. Maybe you delight in watching your children embrace their talents. Perhaps a recent promotion is giving you the chance to flex some leadership skills.<br /><br />If all goes according to plan, you’ll pay off the mortgage, put your kids through college and enjoy a long retirement. But you know the unexpected could happen — do you want to help plan for your family’s future if they must go on without you? Life insurance may help lighten their financial burden.<br /><br />Your Vlife agent can show you a number of coverage options you can tailor to your priorities and budget. In fact, life insurance plans may be more affordable than you might think.</div>,
+    uttonLabel: 'Learn More',
+    imgStart: false,
+    img: require ('../../images/about.png').default,
+    alt: 'data',
+    dark: true,
+    primary: true,
+    darkText: false
+
+};

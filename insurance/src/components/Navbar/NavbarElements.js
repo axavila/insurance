@@ -20,7 +20,26 @@ export const Nav = styled.nav`
         transition: 0.8s all ease;
     }
 
-`
+`;
+
+export const Nav2 = styled.nav`
+    background: ${({scrollNav}) => (scrollNav ? '#262626' : '#262626')};
+    height: 75px;
+    margin-top: -80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.08rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+   
+
+    @media screen and (max-width: 960px) {
+        transition: 0.8s all ease;
+    }
+
+`;
 
 export const NavbarContainer = styled.div `
     display: flex;
@@ -34,7 +53,7 @@ export const NavbarContainer = styled.div `
 
 
 
-`
+`;
 
 export const NavLogo = styled(LinkR) `
     
@@ -87,7 +106,7 @@ export const NavItem = styled.li `
     height: 80px;
 `
 
-export const NavLinks = styled(LinkS) `
+export const NavLinks = styled(LinkR) `
     color: #fff;
     display: flex;
     align-items: center;
