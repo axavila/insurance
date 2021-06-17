@@ -1,21 +1,27 @@
 import styled, {css} from 'styled-components/macro';
-import ImgBg from '../../images/back2.jpg';
+import ImgBg from '../../images/about2.png';
 import {MdKeyboardArrowRight, MdArrowForward} from 'react-icons/md';
 
 
 export const HeroContainer = styled.div `
-    background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.1)), url(${ImgBg}) no-repeat fixed;
-    height: 100vh;
+    background: linear-gradient(to right, rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(${ImgBg}) no-repeat;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;
+    height: 112vh;
     width: 100%;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+
     align-items: center;
-    padding: 0 30px;
+    padding:  0px;
     z-index: 1;
     background-position: relative;
     background-size: cover;
 
-    :before {
+    /* :before {
         content: '';
         position: absolute;
         top: 0;
@@ -25,7 +31,7 @@ export const HeroContainer = styled.div `
         background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 800%), linear-gradient(180deg, rgba(0,0,0,0.2) 0%, transparent 10%);
         z-index: 2;
 
-    }
+    } */
 `;
 
 export const HeroContent = styled.div `
@@ -78,10 +84,40 @@ export const HeroBtnWrapper = styled.div `
 
 export const ArrowForward = styled(MdArrowForward) `
     margin-left: 8px;
-    font-siez: 20px;
+    font-size: 20px;
 `
 
 export const ArrowRight = styled(MdKeyboardArrowRight) `
 margin-left: 8px;
-font-siez: 20px;
+font-size: 20px;
 `
+
+ export const HeroSection = styled.section `
+    height: 100vh;
+    max-height: 1080px;
+    position: relative;
+    overflow: hidden;
+    
+    
+`;
+
+export const HeroWrapper = styled.div`
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+`;
+
+export const HeroImage = styled.img`
+    
+    top: 0;
+    left: 0;
+    bottom: 0%;
+    width: 100vw;
+    height: 100vh;
+    
+    background: no-repeat fixed;
+`;
