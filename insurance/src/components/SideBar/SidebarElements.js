@@ -49,7 +49,7 @@ export const SidebarMenu = styled.ul `
 
 `;
 
-export const SidebarLink = styled(LinkS) `
+export const SidebarLink = styled(LinkR) `
     display: flex;
     align-ityems: center;
     justify-content: center;
@@ -74,16 +74,16 @@ export const SideBtnWrap = styled.div `
 
 export const SidebarRoute = styled(LinkR) `
     border-radius: 50px;
-    background: #679BCA;
+    background: #FF4500;
     white-space: nowrap;
     padding: 16px 64px;
-    color: #010606;
+    color: #fff;
     font-size: 16px;
     outline: none;
     border: none;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
-    text-decoraction: none;
+    text-decoration: none;
 
     &:hover {
         transition: all 0.2s ease-in-out;

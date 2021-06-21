@@ -93,8 +93,13 @@ font-size: 20px;
 `
 
  export const HeroSection = styled.section `
-    height: 100vh;
+    /* height: 100vh;
     max-height: 1080px;
+    position: relative;
+    overflow: hidden;
+    object-fit: cover; */
+    height: 100vh;
+    max-height: 1100px;
     position: relative;
     overflow: hidden;
     
@@ -102,6 +107,15 @@ font-size: 20px;
 `;
 
 export const HeroWrapper = styled.div`
+    /* width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    object-fit: cover; */
+
     width: 100%;
     height: 100%;
     display: flex;
@@ -113,11 +127,20 @@ export const HeroWrapper = styled.div`
 
 export const HeroImage = styled.img`
     
-    top: 0;
+    /* top: 0;
     left: 0;
     bottom: 0%;
     width: 100vw;
     height: 100vh;
     
+    background: no-repeat fixed;
+    object-fit: cover; */
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
     background: no-repeat fixed;
 `;

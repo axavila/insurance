@@ -22,7 +22,7 @@ export const Container1 = styled.div`
     right: 0;
     top: 0;
     z-index: 1;
-    overflow: hidden; */ */
+    overflow: hidden; */ 
     /* background: linear-gradient(108deg, rgba(24, 89, 49, 1) 80%, rgba(24, 89, 49, 1) 100%); */
     
 `;

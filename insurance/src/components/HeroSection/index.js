@@ -187,7 +187,7 @@ function Hero({slides}) {
                                     <HeroContent>
                                         <h1>{slide.title}</h1>
                                         <p>{slide.sub}</p>
-                                        <Button to={slide.path} primary='true' css={`max-width: 160px;`}>
+                                        <Button to='./contactus' primary='true' css={`max-width: 160px;`}>
                                             {slide.label}
                                             <Arrow />
                                         </Button>

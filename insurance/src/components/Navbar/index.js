@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {FaBars} from 'react-icons/fa';
 import {animateScroll as scroll} from 'react-scroll';
-import {Nav, NavbarContainer, Logo, Logo2, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink} from './NavbarElements'
+import {Nav, NavbarContainer, Logo, Logo2, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink, NavLinks1} from './NavbarElements'
 import ImgLogo from '../../images/logop5.png';
 import ImgLogo2 from '../../images/logo22.png';
 import { IconContext } from 'react-icons/lib';
@@ -49,10 +49,10 @@ const Navbar = ({toggle}) => {
                           <NavLinks to='./about' smooth={true} duration={500} spy={true} exact='true' offset={-80}>About Us</NavLinks>
                       </NavItem>
                       <NavItem>
-                          <NavLinks to='insurances' smooth={true} duration={500} spy={true} exact='true' offset={-80}>Business Insurance</NavLinks>
+                          <NavLinks1 to='insurances' smooth={true} duration={500} spy={true} exact='true' offset={-80}>Business Insurance</NavLinks1>
                       </NavItem>
                       <NavItem>
-                          <NavLinks to='personal' smooth={true} duration={500} spy={true} exact='true' offset={-80}>Personal Insurance</NavLinks>
+                          <NavLinks1 to='personal' smooth={true} duration={500} spy={true} exact='true' offset={-80}>Personal Insurance</NavLinks1>
                       </NavItem>
                       
                   </NavMenu>

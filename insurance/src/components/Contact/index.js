@@ -1,14 +1,15 @@
 import React, {useState} from 'react'
-import { Container, Form, FormButton, FormContent, FormH1, FormInput, FormLabel, FormWrap, Icon, Text, Column1, Column2, InfoWrapper, InfoRow, ServicesH2, ServicesP, ServicesH1, TextWrapper} from './ContactElements'
+import { Container, Form, FormButton, FormContent, FormH1, FormInput, FormLabel, FormWrap, Icon, Text, Column1, Column2, InfoWrapper, InfoRow, ServicesH2, ServicesP, ServicesH1, TextWrapper, FormInput1} from './ContactElements'
 
 const Contact = () => {
     const [data, setData] = useState ({
         name: "",
         email: "",
         phone: "",
+        message: "",
     });
 
-    const {name, email, phone} = data;
+    const {name, email, phone, message} = data;
 
     const handleChange = (e) => {
         setData({...data, [e.target.name]: e.target.value});
@@ -23,13 +24,13 @@ const Contact = () => {
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify([[name, email, phone, new Date().toLocaleString()]])
+                body: JSON.stringify([[name, email, phone, message, new Date().toLocaleString()]])
             
             }
             
             );
             await response.json();
-            setData({...data, name: '', email: '', phone: ''});
+            setData({...data, name: '', email: '', phone: '', message:''});
 
         } catch (err) {
             console.log(err)
@@ -71,6 +72,13 @@ const Contact = () => {
                                         name= 'email'
                                         value= {email}
                                         onChange={handleChange}
+                            />
+                            <FormInput1 textarea 
+                                        name= 'message'
+                                        rows="5"
+                                        value= {message}
+                                        onChange={handleChange}
+                                        placeholder='Message'
                             />
                             <FormButton type='submit'>Continue</FormButton>
                             {/* <Text>Forgot Password</Text> */}

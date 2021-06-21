@@ -160,4 +160,19 @@ export const Logo2 = styled.img `
 width: 146px;
 height: 60px;
 margin: 8px;
-`
+`;
+
+
+export const NavLinks1 = styled(LinkS) `
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    cursor: pointer;
+
+    &.active {
+        border-bottom: 4px solid #1c9900;
+    }
+`;

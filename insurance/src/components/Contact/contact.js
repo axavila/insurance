@@ -6,9 +6,10 @@ const ContactP = () => {
         name: "",
         email: "",
         phone: "",
+        message: "",
     });
 
-    const {name, email, phone} = data;
+    const {name, email, phone, message} = data;
 
     const handleChange = (e) => {
         setData({...data, [e.target.name]: e.target.value});
@@ -18,18 +19,18 @@ const ContactP = () => {
         e.preventDefault();
 
         try {
-            const response = await fetch('https://v1.nocodeapi.com/axavila20/google_sheets/jjBMlWHfnDgIqpBe?tabId=Sheet1' , {
+            const response = await fetch('https://v1.nocodeapi.com/axavila20/google_sheets/jjBMlWHfnDgIqpBe?tabId=Sheet1', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify([[name, email, phone, new Date().toLocaleString()]])
+                body: JSON.stringify([[name, email, phone, message, new Date().toLocaleString()]])
             
             }
             
             );
             await response.json();
-            setData({...data, name: '', email: '', phone: ''});
+            setData({...data, name: '', email: '', phone: '', message: ''});
 
         } catch (err) {
             console.log(err)
@@ -77,10 +78,10 @@ const ContactP = () => {
                                         onChange={handleChange}
                                         placeholder='Email'
                             />
-                            <FormInput1 input type='textarea' required 
+                            <FormInput1 textarea 
                                         name= 'message'
-                                        
-                                        value= {email}
+                                        rows="5"
+                                        value= {message}
                                         onChange={handleChange}
                                         placeholder='Message'
                             />
