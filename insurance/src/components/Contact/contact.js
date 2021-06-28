@@ -45,14 +45,14 @@ const ContactP = () => {
             <Container1>
                 
                 {/* <FormWrap> */}
-
+                    
                 <InfoWrapper>
-
+                        
                     <InfoRow>
                         
                     {/* <Icon to="/insurance">Vlife</Icon> */}
                     <FormContent>
-                        <Form2>
+                    <Form2>
                             <FormH11><div>Contact Us<br /><br /><hr></hr></div></FormH11>
                         </Form2>
                         <Form1 onSubmit= {handleSubmit}>
@@ -96,10 +96,11 @@ const ContactP = () => {
                     
                    
                     
-                {/* </FormWrap> */}
+                
                 </InfoRow>
 
                 </InfoWrapper>
+                {/* </FormWrap> */}
             </Container1>
             
         </>

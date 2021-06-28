@@ -3,6 +3,7 @@ import Sidebar from '../components/SideBar';
 import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
 import InfoSection from '../components/InfoSection';
+import InfoSection2 from '../components/InfoSection/index2';
 import { homeObjFive, homeObjFour, homeObjOne, homeObjSix, homeObjThree, homeObjTwo } from '../components/InfoSection/Data';
 import Services from '../components/Services';
 import Footer from '../components/Footer';
@@ -30,8 +31,8 @@ const Aboutus = () => {
             {/* <HeroSection /> */}
             <SectionAbout />
             <InfoSection {...homeObjFive}/>
-           
-            <SectionAbout2 />
+            <InfoSection2 {...homeObjSix}/>
+            {/* <SectionAbout2 /> */}
             <Footer/>
             
         </>

@@ -94,18 +94,18 @@ export const homeObjFive = {
 
 export const homeObjSix = {
     id: 'personal',
-    lightBg: false,
-    lightText: true,
-    lightTextDesc: true,
+    lightBg: true,
+    lightText: false,
+    lightTextDesc: false,
     topLine: 'Vlife Insurance',
-    headLine: 'Mision',
-    description: <div>A highly recognized company throughout the country, standing out for our high quality of services and the trust that our clients place in us. <br />Always safeguarding the well-being of our clients in an innovative and attractive way.</div>,
+    headLine: 'Who we are',
+    description: <div>A company of high recognition throughout the country, standing out for our high quality of services and the trust that our clients place in us. <br />Always safeguarding the well-being of our clients in an innovative and attractive way.</div>,
     buttonLabel: 'Learn More',
     imgStart: true,
     img: require ('../../images/datasix3.png').default,
     alt: 'data',
     dark: true,
     primary: true,
-    darkText: false
+    darkText: true
 
 };

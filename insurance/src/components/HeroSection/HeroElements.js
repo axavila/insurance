@@ -102,7 +102,17 @@ font-size: 20px;
     max-height: 1100px;
     position: relative;
     overflow: hidden;
+
+    @media screen and (max-width: 768px) {
+        
+        height: 20rem;
+        width: 30rem;
+        
+        
+    }
     
+   
+
     
 `;
 
@@ -123,6 +133,8 @@ export const HeroWrapper = styled.div`
     align-items: center;
     overflow: hidden;
     position: relative;
+
+   
 `;
 
 export const HeroImage = styled.img`
@@ -143,4 +155,16 @@ export const HeroImage = styled.img`
     height: 100vh;
     object-fit: cover;
     background: no-repeat fixed;
+
+
+    @media screen and (max-width: 480px) {
+        
+      
+        height: 20rem;
+        width: 50rem;
+      
+        
+        
+    }
+
 `;

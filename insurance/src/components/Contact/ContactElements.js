@@ -14,6 +14,16 @@ export const Container1 = styled.div`
     z-index: 1;
     background-position: relative;
     background-size: cover;
+
+
+    /* @media screen and (max-width: 400px) {
+        padding: 32px 32px;
+        height: 100vh;
+        
+    } */
+       
+        
+    
     /* background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.1)), url(${ImgBg}) no-repeat fixed;
     min-height: 692px;
     /* position: fixed; */
@@ -65,9 +75,10 @@ export const FormWrap = styled.div`
     grid-gap: 16px;
     padding: 0 50px;
 
-    @media screen and (max-width: 400px) {
-        height: 80%;
-    }
+    /* @media screen and (max-width: 400px) {
+        height: 100%;
+        width: 100%;
+    } */
 `;
 
 export const Icon = styled(Link)`
@@ -92,6 +103,7 @@ export const FormContent = styled.div`
 
     @media screen and (max-width: 480px) {
         padding: 10px;
+        
     }
 `;
 
@@ -128,6 +140,7 @@ export const Form1 = styled.form`
 
     @media screen and (max-width: 400px) {
         padding: 32px 32px;
+        width: 120%;
     }
 `;
 
@@ -147,7 +160,11 @@ export const Form2 = styled.form`
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.9); */
 
     @media screen and (max-width: 400px) {
-        padding: 32px 32px;
+        /* padding: 32px 32px; */
+        padding-top: 5rem;
+        padding-right: 10rem;
+        align-items: center;
+        justify-content: center;
     }
 `;
 export const FormH1 = styled.h1`
@@ -164,6 +181,11 @@ export const FormH11 = styled.h1`
     font-size: 40px;
     font-weight: 400;
     text-align: center;
+
+    @media screen and (max-width: 400px) {
+        font-size: 2rem;
+        
+    }
 `;
 
 export const FormLabel = styled.label`

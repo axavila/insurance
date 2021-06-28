@@ -13,6 +13,9 @@ const HeroSection = styled.section `
     position: relative;
     overflow: hidden;
     
+
+   
+
     
 `;
 
@@ -77,8 +80,8 @@ const HeroContent = styled.div`
     color: #fff;
 
     h1 {
-        font-size: clamp(1rem, 8vw, 2rem);
-        font-weight: 400;
+        font-size: clamp(1rem, 8vw, 3rem);
+        font-weight: 600;
         text-transform: uppercase;
         text-shadow: 0px 0px 20px rgba(0,0,0,0.4);
         text-align: left;
