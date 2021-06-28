@@ -15,6 +15,7 @@ export const ServicesContainer = styled.div `
 
     @media screen and (max-widht: 480px) {
         height: 1300px;
+        padding-top: 10px;
     }
 `;
 
@@ -33,7 +34,9 @@ export const ServicesWrapper = styled.div `
 
     @media screen and (max-width: 768px) {
         grid-template-columns: 1fr;
-        padding: 0px 100px;
+        padding: -10px 50px;
+        margin-top: -40px;
+        margin-bottom: 40px;
     }
 `;
 
