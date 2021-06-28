@@ -14,13 +14,13 @@ export const Container1 = styled.div`
     z-index: 1;
     background-position: relative;
     background-size: cover;
+    
+    
+
+   
 
 
-    /* @media screen and (max-width: 400px) {
-        padding: 32px 32px;
-        height: 100vh;
-        
-    } */
+    
        
         
     
@@ -41,7 +41,7 @@ export const Container = styled.div`
     background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.1)), url(${ImgBg}) no-repeat fixed;
     height: 100vh;
     width: 100%;
-    display: flex;
+    
     justify-content: center;
     align-items: center;
     padding: 0 30px;
@@ -58,6 +58,16 @@ export const Container = styled.div`
     z-index: 1;
     overflow: hidden; */
     /* background: linear-gradient(108deg, rgba(24, 89, 49, 1) 80%, rgba(24, 89, 49, 1) 100%); */
+
+    @media screen and (max-width: 480px) {
+        padding: 32px 32px;
+        height: 100vh;
+        width: 100%;
+        
+        margin-bottom: 90px;
+        
+        
+    }
     
 `;
 
@@ -104,6 +114,7 @@ export const FormContent = styled.div`
     @media screen and (max-width: 480px) {
         padding: 10px;
         
+        
     }
 `;
 
@@ -121,6 +132,9 @@ export const Form = styled.form`
 
     @media screen and (max-width: 400px) {
         padding: 32px 32px;
+        
+        
+        
     }
 `;
 
@@ -243,6 +257,11 @@ export const InfoWrapper = styled.div `
     margin-left: auto;
     padding: 0 24px;
     justify-content: center;
+
+    @media screen and (max-width: 480px) {
+        padding-top: 32px;
+        margin-bottom: 900px;
+    }
 `
 
 export const InfoRow =styled.div `
@@ -255,13 +274,17 @@ export const InfoRow =styled.div `
         grid-template-areas: ${({imgStart}) => imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};
 
     }
-`
+
+    
+`;
 
 export const Column1 =styled.div `
     margin-top: 80px;
     margin-bottom: 0px;
     padding: 0 15px;
     grid-area: col1;
+
+    
 `
 
 export const Column2 = styled.div `
@@ -270,6 +293,11 @@ export const Column2 = styled.div `
     margin-bottom: 205px;
     padding: 0 15px;
     grid-area: col2;
+
+    @media screen and (max-width: 480px) {
+        padding-top: 32px;
+        margin-bottom: 90px;
+    }
 `
 
 export const TextWrapper = styled.div `

@@ -8,6 +8,7 @@ import Services from '../components/Services';
 import Footer from '../components/Footer';
 import Contact from '../components/Contact';
 import ScrollToTop from '../components/ScrollToTop';
+import Navbar2 from '../components/Navbar/index2';
 
 const Contactus = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -23,7 +24,7 @@ const Contactus = () => {
         <>
             <ScrollToTop />
             <Sidebar isOpen={isOpen} toggle={toggle} />
-            <Navbar toggle={toggle} />
+            <Navbar2 toggle={toggle} />
             <Contact/>
             
             <Footer/>

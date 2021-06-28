@@ -26,6 +26,7 @@ export const Nav2 = styled.nav`
     background: ${({scrollNav}) => (scrollNav ? '#262626' : '#262626')};
     height: 75px;
     margin-top: -80px;
+    margin-bottom: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
