@@ -49,10 +49,10 @@ const Navbar2 = ({toggle}) => {
                           <NavLinks to='./about' smooth={true} duration={500} spy={true} exact='true' offset={-80}>About Us</NavLinks>
                       </NavItem>
                       <NavItem>
-                          <NavLinks to='insurances' smooth={true} duration={500} spy={true} exact='true' offset={-80}>Business Insurance</NavLinks>
+                          <NavLinks to='/' smooth={true} duration={500} spy={true} exact='true' offset={-80}>Business Insurance</NavLinks>
                       </NavItem>
                       <NavItem>
-                          <NavLinks to='personal' smooth={true} duration={500} spy={true} exact='true' offset={-80}>Personal Insurance</NavLinks>
+                          <NavLinks to='/' smooth={true} duration={500} spy={true} exact='true' offset={-80}>Personal Insurance</NavLinks>
                       </NavItem>
                       
                   </NavMenu>

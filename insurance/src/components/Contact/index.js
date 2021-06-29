@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import { InfoContainer } from '../InfoSection/InfoElements';
 import { Container, Form, FormButton, FormContent, FormH1, FormInput, FormLabel, FormWrap, Icon, Text, Column1, Column2, InfoWrapper, InfoRow, ServicesH2, ServicesP, ServicesH1, TextWrapper, FormInput1} from './ContactElements'
 
 const Contact = () => {
@@ -78,7 +79,7 @@ const Contact = () => {
                                         rows="5"
                                         value= {message}
                                         onChange={handleChange}
-                                        placeholder='Message'
+                                        // placeholder='Message'
                             />
                             <FormButton type='submit'>Continue</FormButton>
                             {/* <Text>Forgot Password</Text> */}

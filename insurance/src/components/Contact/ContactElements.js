@@ -39,7 +39,13 @@ export const Container1 = styled.div`
 
 export const Container = styled.div`
     background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.1)), url(${ImgBg}) no-repeat fixed;
-    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    flex-direction: column;
+    /* height: 100vh;
     width: 100%;
     
     justify-content: center;
@@ -47,7 +53,7 @@ export const Container = styled.div`
     padding: 0 30px;
     z-index: 1;
     background-position: relative;
-    background-size: cover;
+    background-size: cover; */
     background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.1)), url(${ImgBg}) no-repeat fixed;
     /* min-height: 692px; */
     /* position: fixed; */
@@ -59,7 +65,7 @@ export const Container = styled.div`
     overflow: hidden; */
     /* background: linear-gradient(108deg, rgba(24, 89, 49, 1) 80%, rgba(24, 89, 49, 1) 100%); */
 
-    @media screen and (max-width: 480px) {
+    /* @media screen and (max-width: 480px) {
         padding: 32px 32px;
         height: 100vh;
         width: 100%;
@@ -67,7 +73,7 @@ export const Container = styled.div`
         margin-bottom: 90px;
         
         
-    }
+    } */
     
 `;
 
@@ -196,7 +202,7 @@ export const FormH11 = styled.h1`
     font-weight: 400;
     text-align: center;
 
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 480px) {
         font-size: 2rem;
         
     }
@@ -259,8 +265,8 @@ export const InfoWrapper = styled.div `
     justify-content: center;
 
     @media screen and (max-width: 480px) {
-        padding-top: 32px;
-        margin-bottom: 900px;
+        padding-top: 35px;
+        margin-bottom: 90px;
     }
 `
 
@@ -279,25 +285,30 @@ export const InfoRow =styled.div `
 `;
 
 export const Column1 =styled.div `
-    margin-top: 80px;
+    margin-top: 0px;
     margin-bottom: 0px;
     padding: 0 15px;
     grid-area: col1;
 
+    /* @media screen and (max-width: 480px) {
+        padding-top: 32px;
+        margin-bottom: 90px;
+    } */
     
 `
 
 export const Column2 = styled.div `
-    margin-top: 80px;
+    margin-top: 0px;
     margin-left: 60px ;
     margin-bottom: 205px;
     padding: 0 15px;
     grid-area: col2;
+    position: relative;
 
-    @media screen and (max-width: 480px) {
+    /* @media screen and (max-width: 480px) {
         padding-top: 32px;
         margin-bottom: 90px;
-    }
+    } */
 `
 
 export const TextWrapper = styled.div `
@@ -305,12 +316,18 @@ export const TextWrapper = styled.div `
     padding-top: 0;
     padding-bottom: 60px;
 
+    
 `
 
 export const ServicesH2 = styled.h2`
     font-size: 2rem;
     margin-bottom: 10px;
     color: #fff;
+
+    @media screen and (max-width: 480px) {
+        font-size: 1rem;
+    }
+
 `;
 
 export const ServicesP = styled.p`
@@ -325,6 +342,29 @@ export const ServicesH1 = styled.h1`
     margin-bottom: 64px;
 
     @media screen and (max-width: 480px) {
-        font-size: 2rem;
+        font-size: 1rem;
+    }
+`;
+
+export const InfoContainer = styled.div `
+    /* background-position: relative;
+    background-size: cover
+    background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.1)), url(${ImgBg}) no-repeat fixed;
+    height: 100vh;
+    width: 100% */
+
+    background: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.2)), url(${ImgBg1}) no-repeat fixed;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+    z-index: 1;
+    background-position: relative;
+    background-size: cover;
+    @media screen and (max-width: 480px) {
+        padding: 100px 0;
+        height: 170vh;
     }
 `;
